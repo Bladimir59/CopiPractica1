@@ -736,7 +736,7 @@ public class Tokens implements java_cup.runtime.Scanner {
             // fall through
           case 31: break;
           case 2:
-            { return new Symbol(sym.APERTUTAPARENTESIS, yyline + 1, yycolumn + 1);
+            { return new Symbol(sym.APERTURAPARENTESIS, yyline + 1, yycolumn + 1);
             }
             // fall through
           case 32: break;

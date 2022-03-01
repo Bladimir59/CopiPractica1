@@ -3,8 +3,7 @@
 // source: Grafica.flex
 
 /*Primera Seccion My codigo*/
-package Jflex;
-
+package Otroscodigosort;
 import java_cup.runtime.*;
 import Cup.sym;
 
