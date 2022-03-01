@@ -1,0 +1,40 @@
+#al definir el diagrama se puede recibir lo siguiente
+def Barra{
+	titulo:"Grafica 1";
+	ejex:["item","item2"];
+	ejey:[s,punto1];
+	unit:[{0,1},{1,0}];
+	#Aqui termine la grafica
+}
+def Barra{titulo:"Grafica 1"; ejex:["item","item2"]; ejey:[s,punto1]; unit:[{0,1},{1,0}]; }
+que todo llegue en una misma línea y si el orden es ley o puede venir cambiado  ejemplo
+def Barra{
+	unit:[{0,1},{1,0}];
+	ejey:[s,punto1];
+	
+	#Aqui termine la grafica  titulo:"Grafica 1";
+	ejex:["item","item2"];	
+}
+Def Pie{
+	titulo:"Grafica 2";
+	tipo: Cantidad;
+	etiqueta:["Compi1","Compi2"];
+	valores:[5,10];
+	total:25;
+	unir:[{0,1},{1,0}];
+	extra:"Resto";
+}
+Def Pie{
+	titulo:"Grafica 3";
+	tipo:Porsentaje;
+	etiqueta:["Compi1","Compi2"];
+	valores:[70,120];
+	unir:[{0,1},{1,0}];
+	extra:"Resto";
+}
+
+
+#aqui ejecutar grafica
+Ejecutar("Grafica 1");
+
+

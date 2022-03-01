@@ -1,0 +1,78 @@
+/*Primera Seccion */
+
+%%
+
+/*Segunda Seccion */
+%class Tokens
+%standalone
+%unicode
+%line
+%column
+
+%%
+
+/*Tercera Seccion */
+
+#(.)*\n  	 {System.out.println("comentario");}
+
+(D|d)ef  	{System.out.println("tokens Def o def");}
+
+(Barra) 	  {System.out.println("token Barra");}
+
+(Pie)		{System.out.println("token Pie");}
+
+\{      	  {System.out.println("se encontro token { de apertura");}
+	
+\}		{System.out.println("token } de cierre");}
+
+(titulo)  	{System.out.println("token titulo");}
+
+(:)		{System.out.println("token :");}
+
+\[ 		{System.out.println("token [ de apertura");}
+
+]		{System.out.println("token ] de cierre");}
+
+\(		{System.out.println("token ( abertura");}
+
+\)		{System.out.println("token ) cierre");}
+
+,		{System.out.println("token ,");}
+
+([0-9]*)	{System.out.println("token numero");}
+
+//aqui va lo del titulo o captura dentro de comillas
+
+(;)  		 {System.out.println("token ;");}
+
+//para el de barras
+(unir) 	{System.out.println("token unir");}
+
+(ejex) 	{System.out.println("token ejex");}
+
+(ejey) 	{System.out.println("token ejey");}
+
+//para Pie
+
+(tipo)  	{System.out.println("token tipo");}
+
+(Cantidad)	{System.out.println("token Cantidad");}
+
+(Porcentaje)	{System.out.println("token porcentaje");}
+
+(etiqueta)	{System.out.println("token Etiqueta");}
+
+(valores)	{System.out.println("token Valores");}
+
+(total)	{System.out.println("token total");}
+
+(extra)	{System.out.println("token Extra");}
+
+(Ejecutar)	{System.out.println("token Ejecutar");}
+
+//\"	{System.out.println("capturo comillas");}
+
+\"([a-z]|[A-Z]|[0-9]|(\s))*\"  {System.out.println("token TITULOS");}
+
+
+[^] {}//si encuentra un error que va hacer
